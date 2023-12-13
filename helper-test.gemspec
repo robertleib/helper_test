@@ -15,7 +15,8 @@ Gem::Specification.new do |s|
 
   s.metadata['allowed_push_host'] = 'https://rubygems.pkg.github.com/planningcenter'
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.require_paths = ['lib']
 
   s.add_dependency "rails", ">= 6.1"
   s.add_development_dependency "minitest"
